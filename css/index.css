@@ -152,4 +152,286 @@ h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 /* Your code starts here! */
+h1 {
+  font-size: 80px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 980px;
+}
+
+.navig {
+  display: flex;
+}
+nav {
+  display: flex;
+  width: 62%;
+  margin-top: 35px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.container nav a {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.logo {
+  align-items: baseline;
+  margin: 20px 0px 0px 100px;
+
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.title div {
+  text-align: center;
+}
+
+.title div h1 {
+  width: 150%;
+  margin-top: 20%;
+  padding-right: 100px;
+}
+
+.title div p {
+  width: 190px;
+  border: 1px solid black;
+  margin: 20px 30px 100px 170px;
+  padding: 7px 20px 7px 20px;
+}
+
+.features {
+  display: flex;
+  border-top: 1px solid black;
+  width: 90%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer {
+  padding-top: 30px;
+}
+
+footer div p {
+  text-align: center;
+  margin: 100px 0px 150px 0px;
+}
+
+.services {
+  display: flex;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+  width: 90%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.services div {
+  width: 30%;
+}
+/* MEDIA QUERIES */
+
+@media (max-width: 800px) {
+  .navig {
+    flex-direction: column-reverse;
+    
+  }
+  nav {
+    width: 87%;
+  }
+  
+  .logo {
+    margin: 0 auto;
+    margin-left: 36%;
+    margin-top: 4%;
+  }
+
+  .header-img {
+    display: none;
+  }
+  .title {
+    width: 77%;
+    justify-content: center;
+    margin-top: 0px;
+    
+  }
+}
+
+@media(max-width: 500px) {
+  .navig{
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  nav {
+    margin: 0 auto;
+    display: flex;
+    width: 49%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  nav a {
+    margin: 0 auto;
+    width: 97%;
+    flex-direction: column-reverse;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+  }
+  .a1 {
+    border-top: 1px solid black;
+  }
+  .logo {
+    margin: 0 auto;
+    width: 20%;
+    margin-bottom: 20px;
+    margin-top: 4%;
+    
+  }
+  .title {
+    width: 88%;
+    margin-bottom: 0px;
+  }
+  .features {
+    flex-direction: column;
+    width: 49%;
+    margin: 0 auto;
+  }
+  .features div {
+    margin-bottom: 20px;
+    width: 97%;
+  }
+  .middle-img {
+    width: 49%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .services {
+  flex-direction: column;
+  width: 49%;
+  margin: 0 auto;
+  
+  }
+  .services div {
+    width: 97%;
+    margin-top: 20px;
+    
+  }
+  .footer-content {
+    margin: 0 auto;
+    width: 49%;
+  }
+
+}
+
+
+
+/* SERVICES */
+
+.services-header-img {
+  margin-top: 30px;
+}
+.service-title {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 91%;
+}
+.service-title h2 {
+  font-size: 25px;
+}
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  width: 91%;
+  margin-top: 35px;
+  border-top: 1px solid black;
+  padding-top: 35px;
+}
+.row1 div {
+  background: #f2eeed;
+  border: 1px solid black;
+  width: 48%;
+  padding: 24px;
+}
+.row1 div button {
+  background: white;
+  border: 1px solid black;
+  margin-top: 20px;
+  width: 37%;
+  padding: 8px 0px 8px 0px;
+}
+
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  width: 91%;
+  margin-top: 35px;
+}
+.row2 div {
+  background: #f2eeed;
+  border: 1px solid black;
+  width: 48%;
+  padding: 24px;
+}
+.row2 div button {
+  background: white;
+  border: 1px solid black;
+  margin-top: 20px;
+  width: 37%;
+  padding: 8px 0px 8px 0px;
+}
+
+.row3 {
+  display: flex;
+  justify-content: space-between;
+  width: 91%;
+  margin-top: 35px;
+  border-bottom: 1px solid black;
+  padding-bottom: 35px;
+}
+.row3 div {
+  background: #f2eeed;
+  border: 1px solid black;
+  width: 48%;
+  padding: 24px;
+}
+.row3 div button {
+  background: white;
+  border: 1px solid black;
+  margin-top: 20px;
+  width: 37%;
+  padding: 8px 0px 8px 0px;
+}
+.facts {
+  display: flex;
+  width: 91%;
+  margin-top: 35px;
+}
+.facts ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 35px;
+  height: 40%;
+  list-style-type: square;
+  list-style-position: inside;
+}
+.bot p {
+  text-align: center;
+  margin: 100px 0px 150px 0px;
+}
 
